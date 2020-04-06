@@ -1,0 +1,82 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background: linear-gradient(to right, #ff5d62, #ff9966);
+  background-repeat: no-repeat;
+  font-family: cursive;
+}
+
+h1 {
+  font-size: 5em;
+  font-weight: 600;
+  font-family: fantasy;
+  color: #fff;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-bottom: 0.5em;
+}
+
+#app {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #eee;
+  border-radius: 12px;
+  background: rgba(100, 100, 100, 0.3);
+  width: 85%;
+  padding: 1em;
+  text-align: center;
+  color: #fff;
+}
+
+.timer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.timer .tile {
+  border: 1px solid #111;
+  border-radius: 12px;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.5);
+  width: 2em;
+  padding: 1.5rem 0;
+  margin: 5px;
+  background: #000;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 3rem;
+}
+.timer .tile .number {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+.timer .tile span {
+  padding: 0;
+  margin: 0px;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.footer small {
+  font-family: fantasy;
+  font-weight: 400;
+  font-size: 14px;
+}
